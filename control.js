@@ -17,7 +17,7 @@ let num = items.slice(0,4)
 let numbers = [10,20,30,40,50,60]
 let newArray = []
   function arrayOfNums(){
-    numbers.slice(0,4).forEach((a)=>
+    numbers.slice(0,4).forEach(a=>
 newArray.push(a*a)
     )
     numbers.slice(-2).forEach((a)=>
@@ -113,3 +113,20 @@ function reverseString(str){
   return reverseString
 }
 console.log(reverseString(name))
+
+
+y=[1,2,3,4,5]
+w=[6,7,8,9,0]
+z=y.concat(w)
+console.log(z)
+
+x=[[1,2,3],[1,5,6,7],[8,9,5]]
+u= x.flat(Infinity)
+console.log(u)
+
+
+// multyplying a number by itself
+let a=[1,2,3,4,5,6]
+let b=a.reduce()
+console.log(b)
+

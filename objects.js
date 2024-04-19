@@ -18,7 +18,7 @@ newArray()
 
 
 const products = [
-    {name:'kaptop',price:1200,category:'Electronics'},
+    {name:'Laptop',price:1200,category:'Electronics'},
     {name:'shirt',price:25,category:'Clothing'},
     {name:"Headphones",price:80,category:'Electronics'},
     {name:'shoes',price:60,category:'Clothing'},
@@ -30,3 +30,55 @@ var ObjectConstructor =Object.groupBy( products,item =>{
 console.log(ObjectConstructor)
 }
 arrOfObjects()
+
+
+const students =[
+    {name:'john',scores:[90,80,85]},
+    {name:'jane',scores:[95,92,88]},
+    {name:'jim',scores:[70,80,75]},
+    {name:'jill',scores:[85,90,84]},
+]
+
+function newArr(){
+    const average = []
+  students.forEach(i => {
+     let sum = i.scores.reduce((a,b) => a +b);
+     const calculate = sum/i.scores.length
+     if(calculate >= 85){
+         average.push(i.name)
+     }});
+     console.log(average)
+     return average
+}
+newArr();
+
+
+
+const car = {
+    make: 'Ford',
+    model: 'Ranger',
+    year: 2023,
+    displayInfo: function() {
+      console.log(`Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`);
+    },
+  };
+  
+  function takesCar(){
+      car.age = function(){
+         let currentYear = 2024
+         return currentYear - car.year
+      }
+      console.log(car.age())
+  }
+  takesCar()
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    

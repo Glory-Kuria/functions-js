@@ -9,10 +9,10 @@ function sort(){
         newarray.push(newwords)
         console.log(newarray);
         }
-        // else{
-        //     let newwords = i.split("").sort().join("")
-        //     newarray.push(newwords)
-        // }
+         else{
+             let newwords = i.split("").sort().join("")
+            newarray.push(newwords)
+         }
     }
         )
         console.log(newarray)
@@ -53,7 +53,7 @@ let arremployees = [
     {name:"Glory",id:"3546790",salary:100000},
     {name:"Jane",id:"46fhfg7",salary:30000}
 ]
-return (arremployees.sort ((b,a) => a.salary -b.salary))
+return arremployees.sort ((b,a) => a.salary -b.salary)
  }
  console.log (employees())
 
@@ -87,7 +87,7 @@ function array(numbers){
         console.log(i*i)
     })
     newnums.forEach(i=>{
-        console.log()
+        console.log(i+5)
     })
 }
 array([11,12,50,3,6,6,7,0,5])
