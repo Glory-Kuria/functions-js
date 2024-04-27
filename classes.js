@@ -15,31 +15,32 @@ const Audi = new Car('Audi', 'New', 2019, 'true')
 console.log({Audi});
 
 
-// // Rental class
-// class Rental {
-//     constructor(car, renterName, rentalStartDate, rentalEndDate) {
-//         this.car = car;
-//         this.renterName = renterName;
-//         this.rentalStartDate = new Date(rentalStartDate); 
-//         this.rentalEndDate = new Date(rentalEndDate); 
-//     }
+// Rental class
+class Rental {
+    constructor(car, renterName, rentalStartDate, rentalEndDate) {
+        this.car = car;
+        this.renterName = renterName;
+        this.rentalStartDate = new Date(rentalStartDate); 
+        this.rentalEndDate = new Date(rentalEndDate); 
+    }
 
-//     calculateRentalDuration() {   
-//         const  differenceInMilliseconds = this.rentalEndDate - this.rentalStartDate;   
-//         const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
-//         return differenceInDays;
-//     }
+     calculateRentalDuration() {   
+        const  differenceInMilliseconds = this.rentalEndDate - this.rentalStartDate;   
+        const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
+       return differenceInDays;
+     }
 
-// }
-// const uber = new Rental ('Audi', 'Maryann', "2024-4-12", "2024-6-6")
-// console.log({uber});
+}
+const uber = new Rental ('Audi', 'Glory', "2024-5-7", "2024-7-20")
+console.log({uber});
 
 // let rentalDuration = Rental.calculateRentalDuration();
 
-// console.log("Rental duration: " + rentalDuration + " days");
+console.log("Rental duration: " + rentalDuration + " days");
 
 
-//Number 2 Quiz App
+
+
 class Question {
     
     constructor(text, options, correctAnswer) {
