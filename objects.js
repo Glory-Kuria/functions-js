@@ -78,7 +78,18 @@ const car = {
     
     
     
-    
+  function takesArray(names){
+    let i =0
+    let newArray=names.map(names=>{
+        if(names[i].length>5)
+        i++ 
+    {
+            return (names[i])
+        }
+    })
+    console.log(names[i]);
+  }
+  takesArray(["jane","mercy","kennedy","matthew"])
     
     
     
