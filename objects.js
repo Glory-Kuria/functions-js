@@ -69,7 +69,7 @@ const car = {
          return currentYear - car.year
       }
       console.log(car.age())
-  }
+  }objects.ObjectConstructor
   takesCar()
 
 
